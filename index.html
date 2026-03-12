@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MART · slow fashion sob medida</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,700;1,6..96,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--gold:#C9A84C;--purple:#7C4FA0;--lilac:#B07CC6;--dark:#2A1A3A}
+    html,body{min-height:100%;font-family:'Cormorant Garamond',Georgia,serif}
+    body{background:linear-gradient(135deg,#F9F2D4 0%,#F5DCEF 50%,#EDD4F7 100%);display:flex;justify-content:center;align-items:flex-start;padding:64px 20px;min-height:100vh}
+    .container{position:relative;z-index:1;width:100%;max-width:440px;display:flex;flex-direction:column;align-items:center}
+    .brand-name{font-family:'Bodoni Moda',Georgia,serif;font-size:3rem;font-weight:700;letter-spacing:0.28em;background:linear-gradient(160deg,var(--purple) 10%,var(--gold) 90%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:10px}
+    .tagline{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1rem;color:#9A7AB0;letter-spacing:0.12em;margin-bottom:8px}
+    .handle{font-family:'Bodoni Moda',Georgia,serif;font-size:0.82rem;letter-spacing:0.14em;color:var(--purple);font-weight:600}
+    .divider{width:60px;height:1.5px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:24px auto 32px}
+    .bio{font-size:1.05rem;line-height:1.75;color:var(--dark);text-align:center;max-width:360px;margin-bottom:36px;opacity:0.9}
+    .links{width:100%;display:flex;flex-direction:column;gap:14px}
+    .link-btn{display:flex;align-items:center;gap:14px;width:100%;padding:16px 24px;border-radius:16px;text-decoration:none;color:var(--dark);background:rgba(255,255,255,0.55);border:1px solid rgba(176,124,198,0.22);backdrop-filter:blur(12px);box-shadow:0 4px 20px rgba(124,79,160,0.07);transition:transform 0.22s ease,box-shadow 0.22s ease}
+    .link-btn:hover{transform:translateY(-3px);box-shadow:0 10px 32px rgba(124,79,160,0.15);background:rgba(255,255,255,0.75)}
+    .link-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .icon-ig{background:linear-gradient(135deg,#f9f2d4,#edd4f7)}
+    .icon-mail{background:linear-gradient(135deg,#f9f2d4,#d4ecf7)}
+    .icon-info{background:linear-gradient(135deg,#f9f2d4,#f7d4e6)}
+    .link-label{display:flex;flex-direction:column;gap:2px}
+    .link-label span:first-child{font-family:'Bodoni Moda',Georgia,serif;font-size:0.78rem;letter-spacing:0.18em;color:var(--dark)}
+    .link-label span:last-child{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.92rem;color:#9A7AB0}
+    .link-arrow{margin-left:auto;color:var(--lilac);font-size:1rem;opacity:0.6;transition:opacity 0.2s,transform 0.2s}
+    .link-btn:hover .link-arrow{opacity:1;transform:translateX(3px)}
+    .section-title{font-family:'Bodoni Moda',Georgia,serif;font-size:0.72rem;letter-spacing:0.28em;color:var(--gold);margin:44px 0 18px;text-align:center}
+    .process{width:100%;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .step{background:rgba(255,255,255,0.45);border:1px solid rgba(176,124,198,0.18);border-radius:14px;padding:18px 12px;text-align:center}
+    .step-num{font-family:'Bodoni Moda',Georgia,serif;font-size:1.3rem;background:linear-gradient(160deg,var(--purple),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:6px}
+    .step-label{font-family:'Cormorant Garamond',serif;font-size:0.88rem;color:var(--dark);line-height:1.4;opacity:0.85}
+    .footer{margin-top:44px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.88rem;color:#B0A0C0;text-align:center}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="brand-name">MART</h1>
+    <p class="tagline">slow fashion · sob medida · unissex</p>
+    <p class="handle">@martclothing.rio</p>
+    <div class="divider"></div>
+    <p class="bio">Moda como forma de arte. Peças únicas, criadas exclusivamente para você — do primeiro traço às medidas do seu corpo.</p>
+    <div class="links">
+      <a class="link-btn" href="https://instagram.com/martclothing.rio" target="_blank" rel="noopener">
+        <div class="link-icon icon-ig">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7C4FA0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="#7C4FA0"/></svg>
+        </div>
+        <div class="link-label"><span>INSTAGRAM</span><span>@martclothing.rio</span></div>
+        <span class="link-arrow">→</span>
+      </a>
+      <a class="link-btn" href="mailto:martclothingcontact@gmail.com">
+        <div class="link-icon icon-mail">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4A90B0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div class="link-label"><span>E-MAIL</span><span>martclothingcontact@gmail.com</span></div>
+        <span class="link-arrow">→</span>
+      </a>
+      <a class="link-btn" href="mailto:martclothingcontact@gmail.com?subject=Quero%20encomendar%20uma%20pe%C3%A7a%20MART">
+        <div class="link-icon icon-info">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <div class="link-label"><span>ENCOMENDAR</span><span>Quero uma peça exclusiva</span></div>
+        <span class="link-arrow">→</span>
+      </a>
+    </div>
+    <p class="section-title">COMO FUNCIONA</p>
+    <div class="process">
+      <div class="step"><div class="step-num">01</div><div class="step-label">Você nos conta o que imagina</div></div>
+      <div class="step"><div class="step-num">02</div><div class="step-label">Criamos o desenho exclusivo</div></div>
+      <div class="step"><div class="step-num">03</div><div class="step-label">Produzimos sob as suas medidas</div></div>
+    </div>
+    <p class="footer">Cada peça é única. Assim como você. · Rio de Janeiro, 2024</p>
+  </div>
+</body>
+</html>
